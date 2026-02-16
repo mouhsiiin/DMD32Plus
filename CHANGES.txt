@@ -1,3 +1,22 @@
+Version 3 (Modified Fork)
+
+This is a modified fork of https://github.com/ahmadfathan/DMD32Plus
+
+Enhanced Arabic Support:
+- add Latin character support to ArabicFont (ASCII 0x20-0x7F, 224 total glyphs)
+- reduce Arabic font size from 16px to 11px for better display fit
+- add 1px padding around Latin characters for readability
+- add Python font generator `tools/generate_arabic_font.py` for custom TTF rendering
+- implement mixed Latin/Arabic text in single font
+- add RTL (right-to-left) scrolling for Arabic text
+- add bi-directional text handling (Latin stays LTR within RTL flow)
+- improve character mapping to support all ASCII punctuation and symbols
+- Arabic-Indic digits now map to Western digits (0-9)
+- fix visual reversal logic to preserve Latin word sequences
+- add drawStringCompact() for zero-gap rendering
+- add marqueeNoSpacing flag for Arabic marquee mode
+- comprehensive contextual shaping with 37-entry form lookup table
+
 Version 2
 
 - add Arabic font support with `fonts/ArabicFont.h` (generated from tahoma.ttf, 15px)

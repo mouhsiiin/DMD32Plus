@@ -1,5 +1,8 @@
 /*--------------------------------------------------------------------------------------
 
+ DMD32Plus.h - Modified fork of ahmadfathan/DMD32Plus with enhanced Arabic support
+               https://github.com/ahmadfathan/DMD32Plus
+
  DMD32.h   - Function and support library for the Freetronics DMD, a 512 LED matrix display
            panel arranged in a 32 x 16 layout.
 
@@ -7,6 +10,14 @@
  display. Keep an eye on conflicts if there are any other devices running from the same
  SPI port, and that the chip select on those devices is correctly set to be inactive
  when the DMD is being written to.
+
+ Modifications in this fork:
+   - Enhanced Arabic contextual shaping (isolated/initial/medial/final forms)
+   - Lam-Alef ligature support
+   - Mixed Latin/Arabic text rendering in single font
+   - RTL (right-to-left) text scrolling
+   - Custom TTF font generation (tools/generate_arabic_font.py)
+   - Compact rendering mode with no inter-character gaps
 
 
 LED Panel Layout in RAM
