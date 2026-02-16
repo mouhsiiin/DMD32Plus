@@ -1,0 +1,16 @@
+Version 2
+
+- add Arabic font support with `fonts/ArabicFont.h` (generated from tahoma.ttf, 15px)
+- add RTL text rendering API: `drawStringRTL(...)`
+- add UTF-8 Arabic conversion API: `utf8ToArabic(...)`
+- add Arabic helper draw API: `drawArabicString(...)`
+- add example: `examples/arabic_text/arabic_text.ino`
+- add contextual Arabic shaping (isolated/initial/medial/final) for linked letters
+- switch numeric rendering to Western `0-9` digits (maps Arabic-Indic input too)
+- remove extra inter-character gap for Arabic draw/marquee rendering
+- add dedicated lam-alef ligature glyphs (isolated/final) and shaping rule
+
+Version 1
+
+- initial version
+  Fix error from original version of the library https://github.com/Qudor-Engineer/DMD32
